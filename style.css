@@ -1,0 +1,98 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+.right { float: right; }
+.red { color: #FF5049 !important; }
+.red-focus:focus { border: 1px solid #FF5049 !important; }
+
+/**********************************************
+*** TOP PART
+**********************************************/
+
+.top {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.fit {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.fit_title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.fit_next {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.fit_next1st,
+.fit_next2nd,
+.fit_next3rd {
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.fit_next1st,
+.fit_next2nd,
+.fit_next3rd {
+    margin-bottom: 10px;
+    background-color: #28B9B5;
+}
+
+.budget__expenses {
+    background-color: #FF5049;
+}
+
+.fit_next1st--text,
+.fit_next2nd--text,
+.fit_next3rd--text {
+    float: left;
+    font-size: 13px;
+    color: #444;
+    margin-top: 2px;
+}
+
+.fit_next1st--name,
+.fit_next2nd--name,
+.fit_next3rd--name{
+    letter-spacing: 1px;
+    float: left;
+}
